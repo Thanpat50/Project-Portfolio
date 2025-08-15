@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#Skill" class="nav__link">Skill</a></li>
+          <li><a href="#Project" class="nav__link">Projects</a></li>
+          <li><a href="#Activies" class="nav__link">Activies</a></li>
+          <li><a href="#Certificate" class="nav__link">Certificate</a></li>
+
+    </nav>
+
+
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#" class="nav__link" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#Skill" class="nav__link" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#Project" class="nav__link" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Activies" class="nav__link" onclick="toggleMenu()">Activies</a></li>
+          <li><a href="#Certificate" class="nav__link" onclick="toggleMenu()">Certificate</a></li>
+        </div>
+      </div>
+
+    </nav>
+    <script src="main.js"></script>
+  </header>
+
+  <section id="Profile">
+    <div class="profile-container">
+
+      <div class="sec_img">
+        <img id="profileImage" src="img/IMG_9378.JPG" alt="Thanapat ST" width="300px" height="300px">
+      </div>
+
+
+      <div class="sec_text">
+        <p class="sec_text_p1">Hello, I'm</p>
+        <h1 class="title">Thanapat Thanakumchip</h1>
+        <p class="sec_text_p2 fade-text" id="schoolText">Students of Banphai School</p>
+
+        <div id="Social">
+          <img src="assets/Instagam.png" alt="ig" class="icon"
+            onclick="location.href='https://www.instagram.com/ssee_cceeeeeeeeeeeeeeeeeeee/'" height="30px" width="30px">
+          <img src="assets/github.png" alt="git" class="icon" onclick="location.href='https://github.com/Thanpat50'"
+            height="30px" width="30px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="Skill">
+    <h1 class="Skill_h1">Skill</h1>
+
+    <div class="skill-wrapper">
+
+
+
+      <div class="skill-carousel" id="skillCarousel">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Dart</div>
+        <div class="skill-card">Flutter</div>
+        <div class="skill-card">C</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Figma</div>
+        <div class="skill-card">Construct 2</div>
+        <div class="skill-card">Arduino IDE</div>
+        <div class="skill-card">Photoshop</div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section id="Project">
+    <h1 class="Project_h1">Project</h1>
+
+    <div class="scroll-wrapper">
+
+
+
+      <div class="project-co" id="projectCo">
+        <div class="project-card" onclick="openPopup(
+        'Bin Bin',
+        '     เป็นเกมแรกที่ผมได้สร้างให้ตัวละครสามารถเดิน 8 ทิศทางได้ และเป็นเกมที่สร้างฝึกซ้อมในการแข่งขันสร้างเกม ในงานศิลปหัตถกรรมอีกด้วย ทำให้ผมได้เรียนรู้ในการสร้างเกมหลากหลายแนวมากขึ้น ',
+        'img/Bin.png'
+        
+      )">
+          <img class="img1" src="img/Bin.png" alt="">
+          <h1>Bin Bin</h1>
+          <p>Game</p>
+        </div>
+
+
+        <div class="project-card" onclick="openPopup(
+        'The Lost Key Saga Game',
+        '     เป็น Project เกมที่ผมได้ทำขึ้น โดยได้พัฒนาให้ดีขึ้นในกว่าทุกเกมที่ผมเคยทำมา โดยตัวเกมจะให้เราหากุญแจที่หายไป กุญแจหาได้จากการเปิดหีบ ต่าง ๆ และจะมีมอนเตอร์ที่จะคอยวิ่งมาโจมตีเรา ถ้าเลือดหมดจะ Game Over ทันที แต่ถ้าเราเจอกุญแจที่หายไปเราจะชนะทันที เกมนี้ทำให้ผมได้เรียนรู้เทคนิคการสร้างเกมมากขึ้น เช่น การทำให้มอนเตอร์วิ่งมาโจมตีเรา การทำ MiniMap ',
+        'img/Lost.png'
+      )">
+          <img class="img1" src="img/Lost.png" alt="">
+          <h1>The Lost Key Saga </h1>
+          <p>Game</p>
+        </div>
+
+        <div class="project-card" onclick="openPopup(
+        'ZenAirSmart',
+        ' รางวัลเหรียญทอง ระดับชาติ  โครงงานกล่องสมองกล Arduino Serie จากการแข่งขันหุ่นยนต์พัฒนาศักยภาพเยาวชนไทยด้านหุ่นยนต์ ครั้งที่ 2 Thailand Robot & Robotic Olympiad 2024 - 2025',
+        'img/Zen img.png'
+      )">
+          <img class="img1" src="img/Zen img.png" alt="">
+          <h1>ZenAirSmart</h1>
+          <p>โครงงาน</p>
+        </div>
+
+        <div class="project-card" onclick="openPopup(
+        'PathPick',
+        '     ระบบแนะนำสายการเรียน เป็นระบบที่ผมสร้างขึ้นมาเพื่อแก้ปัญหาในโรงเรียน โดยผู้คนส่วนมากไม่ทราบคณะ และสาขาที่ตนเองอยากจะเข้า ผมจึงพัฒนาระบบนี้ขึ้นมาเพื่อแก้ปัญหา ในการพัฒนาทำให้ผมได้เรียนรู้การใช้ภาษา Python ในการดึงข้อมูลจาก Json มาใช้แสดงบน Website และผมได้เรียนรู้เกี่ยวกับการใช้ API เชื่อมต่อกันระหว่างตัว Frontend กับ Backend อีกด้วยครับ',
+        'img/Image.jpeg'
+      )">
+          <img class="img1" src="img/Image.jpeg" alt="">
+          <h1>PathPick</h1>
+          <p>Website</p>
+        </div>
+
+        <div class="project-card" onclick="openPopup(
+        'MySOS',
+        '     แอปพลิเคชั่นแรกที่ผมได้ลองเขียนโดยใช้ Flutter ผมทำ แอปรวมเบอร์ฉุกเฉิน โดยสามารถกดปุ่ม SOS หรือกดโทรตามรายชื่อเบอร์เพื่อโทรออกได้เลย และมีหน้า Medical ID ในการเก็บข้อมูลทางการแพทย์ ผมได้ศึกษาเรียนรู้เกี่ยวกับพื้นฐานในการเขียนแอปพลิเคชั่น โดยใช้ Flutter และผมจะนำสิ่งที่ได้เรียนรู้นำไปพัฒนาต่อยอดในการเขียนแอปพลิเคชั่นให้ดียิ่งขึ้นครับ',
+        'img/SOS.png'
+      )">
+          <img class="img1" src="img/SOS.png" alt="">
+          <h1>MySOS</h1>
+          <p>Application</p>
+        </div>
+
+      </div>
+      <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+          <button class="close-btn" onclick="closePopup()">×</button>
+          <img id="popup-image" src="" alt="Project Image" />
+          <h2 id="popup-title">หัวข้อ</h2>
+          <p id="popup-text">รายละเอียด...</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <section id="Activies">
+    <h1 class="Activies_h1">Activies</h1>
+    
+
+
+    <div class="scroll-wrapper">
+
+
+      <div class="activies-co" id="ActiviesCO">
+        <div class="activies-card" onclick="openPopup(
+        'เป็นตัวแทนถือป้ายคำขวัญในวันกีฬาสี',
+        'ประจำปีการศึกษา 2567 โรงเรียนบ้านไผ่',
+        'img/yello.jpg'
+      )">
+          <img class="img1" src="img/yello.jpg" alt="">
+          <h1>เป็นตัวแทนถือป้ายคำขวัญในวันกีฬาสี</h1>
+          <p>ประจำปีการศึกษา 2567 โรงเรียนบ้านไผ่</p>
+        </div>
+
+         <div class="activies-card" onclick="openPopup(
+        'คณะกรรมการดำเนินงาน Banphai Market Festival',
+        'โดยมีหน้าที่จัดสถานที่ และดูแลความเรียบร้อยภายในงาน',
+        'img/market 2.png'
+      )">
+          <img class="img1" src="img/market 2.png" alt="">
+          <h1>คณะกรรมการดำเนินงาน Banphai Market Festival</h1>
+          <p>ประจำปีการศึกษา 2567 
+ณ โดมอเนกประสงค์ โรงเรียนบ้านไผ่</p>
+        </div>
+
+         <div class="activies-card" onclick="openPopup(
+        'สตาฟในงานบ้านไผ่พุ้นเด้',
+        'โดยมีหน้าที่ให้คำแนะนำผู้ที่เข้ามาเยี่ยมชมนิทรรศการในงาน',
+        'img/Ban.jpg'
+      )">
+          <img class="img1" src="img/Ban.jpg" alt="">
+          <h1>สตาฟในงานบ้านไผ่พุ้นเด้</h1>
+          <p>ณ โรงแรมอินภาวา</p>
+        </div>
+
+         <div class="activies-card" onclick="openPopup(
+        'ปฏิบัติหน้าที่ฝ่ายปฏิคม และสถานที่',
+        'โดยมีหน้าที่จัดการเตรียมสถานที่ในงานกิจกรรมต่าง ๆ ของโรงเรียน ต้อนรับแขกภายในงาน และเสิร์ฟเบรค อาหารว่าง',
+        'img/SCPati.jpg'
+      )">
+          <img class="img1" src="img/SCPati.jpg" alt="">
+          <h1>ปฏิบัติหน้าที่ฝ่ายปฏิคม และสถานที่</h1>
+          <p>ประจำปีการศึกษา 2567</p>
+        </div>
+
+         <div class="activies-card" onclick="openPopup(
+        'เข้าร่วมการอบรมสภานักเรียน',
+        'ประจำปีการศึกษา 2567 ณ หอประชุมโรงเรียนบ้านไผ่',
+        'img/meet.jpg'
+      )">
+          <img class="img1" src="img/meet.jpg" alt="">
+          <h1>เข้าร่วมการอบรมสภานักเรียน</h1>
+          <p>กประจำปีการศึกษา 2567 
+ณ หอประชุมโรงเรียนบ้านไผ่</p>
+        </div>
+
+
+         <div class="activies-card" onclick="openPopup(
+        'เข้าร่วมการอบรมห้องเรียนสีขาว',
+        'ประจำปีการศึกษา 2567 ณ หอประชุมโรงเรียนบ้านไผ่',
+        'img/WitRoom.jpg'
+      )">
+          <img class="img1" src="img/WitRoom.jpg" alt="">
+          <h1>เข้าร่วมการอบรมห้องเรียนสีขาว</h1>
+          <p>ประจำปีการศึกษา 2567 
+ณ หอประชุมโรงเรียนบ้านไผ่</p>
+        </div>
+
+
+         <div class="activies-card" onclick="openPopup(
+        'คณะกรรมการสภานักเรียน โรงเรียนบ้านไผ่ ปีการศึกษา 2567',
+        'ทำให้ผมได้เป็นหนึ่งในคณะการดำเนินงานกิจกรรมต่าง ๆ ภายในโรงเรียน และช่วยผลักดันโครงการ หรือกิจกรรมที่อยากให้เกิดขึ้นภายในโรงเรียน ทำให้ผมได้เข้าร่วมกิจกรรมมากมายทั้งในโรงเรียน และนอกโรงเรียน',
+        'img/'
+      )">
+          <img class="img1" src="img/" alt="">
+          <h1>คณะกรรมการสภานักเรียน โรงเรียนบ้านไผ่ </h1>
+          <p>ประจำปีการศึกษา 2567</p>
+        </div>
+
+
+         <div class="activies-card" onclick="openPopup(
+        'ประธานสายการเรียน วิทยาศาสตร์ - คอมพิวเตอร์',
+        '     ในปีการศึกษา 2568 ผมได้เป็นประธานคณะการทำงานของสายการเรียน เป็นผู้จัดงาน ประสานงาน กิจกรรมต่าง ๆ ภายในสายการเรียน โดยกิจกรรมรับน้อง ผมได้พูดแนะนำการเรียน การปรับตัวในการเรียน  และกิจกรรมสานสัมพันธ์สายเทค (ISC) ได้เป็นผู้ดำเนินการจัดงาน โดยงานได้สำเร็จลุล่วงไปด้วยดี  ',
+        'img/patan.jpg'
+      )">
+          <img class="img1" src="img/patan.jpg" alt="">
+          <h1>ประธานสายการเรียน วิทยาศาสตร์ - คอมพิวเตอร์</h1>
+          <p>ประจำปีการศึกษา 2568</p>
+        </div>
+
+
+         <div class="activies-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9378.JPG" alt="">
+          <h1>SC</h1>
+          <p>กิจกรรม</p>
+        </div>
+
+        <div class="activies-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9378.JPG" alt="">
+          <h1>SC</h1>
+          <p>กิจกรรม</p>
+        </div>
+
+        <div class="activies-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9378.JPG" alt="">
+          <h1>SC</h1>
+          <p>กิจกรรม</p>
+        </div>
+
+        <div class="activies-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9378.JPG" alt="">
+          <h1>SC</h1>
+          <p>กิจกรรม</p>
+        </div>
+
+        <div class="activies-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9378.JPG" alt="">
+          <h1>SC</h1>
+          <p>กิจกรรม</p>
+        </div>
+
+        <div class="activies-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9378.JPG" alt="">
+          <h1>SC</h1>
+          <p>กิจกรรม</p>
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+  <section id="Certificate">
+    <h1 class="Certificate_h1">Certificate</h1>
+
+    <div class="scroll-wrapper">
+
+      <div class="certificate-co" id="certificateCo">
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+        <div class="certificate-card" onclick="openPopup(
+        'ZenAirSmart',
+        'โครงการบ้านอัจฉริยะเพื่อสิ่งแวดล้อม แข่งขันระดับประเทศ',
+        'img/IMG_9380.JPG'
+      )">
+          <img class="img1" src="img/IMG_9379.JPG" alt="">
+          <h1>certificate</h1>
+          <p>เกียรติบัตร</p>
+        </div>
+
+
+      </div>
+
+
+      </div>
+
+      
+  </section>
+
+<!-- Popup ของหมวดนี้ (วางไว้ที่เดิมได้เลย) -->
+<div class="popup-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="popup-content" role="document">
+    <button class="close-btn" onclick="closePopup(this)">×</button>
+
+    <!-- เปลี่ยนมาใช้คลาส เพื่อไม่ชนกันระหว่างหมวด -->
+    <img class="popup-image" src="" alt="Project Image" />
+    <h2 class="popup-title">หัวข้อ</h2>
+    <h3 class="popup-subtitle">คำอธิบายสั้น</h3>
+
+    <!-- เนื้อหาเสริม ใส่ HTML เพิ่มได้ -->
+    <div class="popup-rich"></div>
+  </div>
+</div>
+
+
+
+
+  <footer>
+    <h3 class="footer_h3">Thanapat Thanakumchip.</h6>
+      <p class="footer_p1">เว็บไซต์นี้พัฒนาขึ้นเพื่อรวบรวมผลงาน กิจกรรม และประกาศนียบัตร ต่าง ๆ</p>
+
+  </footer>
+
+
+</body>
+
+</html>
