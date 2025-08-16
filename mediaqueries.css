@@ -3,12 +3,211 @@
         display: none;
     }
 
-    
     #hamburger-nav {
         display: flex;
     }
 
 
-    
-    
+    .header {
+        top: 15px;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        max-width: 95%;
+    }
+
+
+    #Profile {
+        padding: 60px 15px 30px;
+        margin-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sec_img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .sec_text_p1,
+    .sec_text_p2 {
+        font-size: 1rem;
+    }
+
+    /* Skill section */
+    .Skill_h1 {
+        font-size: 32px;
+        padding-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .skill-wrapper {
+        padding: 0 10px;
+    }
+
+    .skill-carousel {
+        max-width: 100%;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+ 
+    .skill-card {
+        min-width: 100px;
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+
+
+    .Project_h1 {
+        font-size: 32px;
+        margin-top: 200px;
+        padding-top: 80px;
+    }
+
+    .project-co {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+        margin-top: 100px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: 150px;
+    }
+
+    .Activies_h1 {
+        font-size: 32px;
+        margin-top: 200px;
+        padding-top: 80px;
+    }
+
+    .activies-co {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+        margin-top: 100px;
+    }
+
+    .activies-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .Certificate_h1 {
+        font-size: 32px;
+        margin-top: 200px;
+        padding-top: 80px;
+    }
+
+    .certificate-co {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+        margin-top: 100px;
+    }
+
+    .certificate-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #popup-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .popup-content h2 {
+        font-size: 20px;
+        width: 80%;
+    }
+
+  
+    .menu-links.open {
+        padding-right: 100px;
+        padding-left: 100px;
+        margin-top: 15px;
+    }
+
+    .menu-links a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+
+    #Social {
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .scroll-btn {
+        font-size: 24px;
+        padding: 4px 8px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        top: 10px;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .sec_img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .Skill_h1,
+    .Project_h1,
+    .Activies_h1,
+    .Certificate_h1 {
+        font-size: 28px;
+    }
+
+    .skill-card {
+        min-width: 80px;
+        padding: 12px 15px;
+        font-size: 0.8rem;
+    }
+
+    .project-card,
+    .activies-card,
+    .certificate-card {
+        padding: 15px;
+    }
+
+    .menu-links.open {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
 }
