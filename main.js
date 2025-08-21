@@ -1,5 +1,5 @@
 
-/*แถบ Hamberger */
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -10,7 +10,7 @@ function toggleMenu() {
 
 
 
-/*รูปตัวหนังสือเลื่อน */
+
 const schoolTexts = [
   "Students of Banphai School",
   "Student Council of Banphai School ",
