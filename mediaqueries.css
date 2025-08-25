@@ -9,15 +9,6 @@
 
 
 
-    /*
-    .header {
-        top: 15px;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        max-width: 95%;
-    }
-
-
     #Profile {
         padding: 60px 15px 30px;
         margin-top: 80px;
@@ -30,8 +21,8 @@
     }
 
     .sec_img img {
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
     }
 
     .title {
@@ -43,13 +34,8 @@
         font-size: 1rem;
     }
 
-    /* Skill section */
-    /*
-    .Skill_h1 {
-        font-size: 32px;
-        padding-top: 80px;
-        margin-bottom: 20px;
-    }
+
+
 
     .skill-wrapper {
         padding: 0 10px;
@@ -60,7 +46,7 @@
         padding: 15px 10px;
         gap: 10px;
     }
- 
+
     .skill-card {
         min-width: 100px;
         padding: 15px 20px;
@@ -69,8 +55,6 @@
 
 
     
-
-    /*
     #Social {
         gap: 15px;
         margin-top: 10px;
@@ -81,11 +65,9 @@
         height: 35px;
     }
 
-
     .scroll-btn {
         font-size: 24px;
         padding: 4px 8px;
     }
 }
-*/
-}
+
